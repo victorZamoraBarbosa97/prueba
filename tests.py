@@ -19,7 +19,7 @@ class MyTest(TestCase):
     
     def test_factorial_5_equal_120(self):
         response = self.client.get("/factorial?n=5")
-        self.assertEqual(response.json, dict(status=True, result = 120, message = "OK"))
+        self.assertEqual(response.json, dict(status=True, result = 5000000000000000, message = "OK"))
             
 if __name__ == '__main__':
     unittest.main()
